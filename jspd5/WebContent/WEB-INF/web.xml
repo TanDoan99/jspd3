@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>jspd5</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>ShowMuaHoaController</servlet-name>
+  	<servlet-class>controllers.ShowMuaHoaController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ShowMuaHoaController</servlet-name>
+  	<url-pattern>/muahoa</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+  	<servlet-name>MuaHoaController</servlet-name>
+  	<servlet-class>controllers.MuaHoaController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MuaHoaController</servlet-name>
+  	<url-pattern>/xuly-muahoa</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>ShowMuaHoaBaiTap2Controller</servlet-name>
+  	<servlet-class>controllers.ShowMuaHoaBaiTap2Controller</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ShowMuaHoaBaiTap2Controller</servlet-name>
+  	<url-pattern>/muahoa-baitap2</url-pattern>
+  </servlet-mapping>
+   <servlet>
+  	<servlet-name>MuaHoaBaiTap2Controller</servlet-name>
+  	<servlet-class>controllers.MuaHoaBaiTap2Controller</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MuaHoaBaiTap2Controller</servlet-name>
+  	<url-pattern>/xu-ly-muahoa-baitap2</url-pattern>
+  </servlet-mapping>
+</web-app>
